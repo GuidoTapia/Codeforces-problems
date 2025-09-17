@@ -1,7 +1,13 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <map>
+#include <set>
+#include <string>
+#include <cmath>
+#include <climits>
 
 using namespace std;
-
 int main() {
 	long long t, acc;
 	vector<long long> prebase,price;
@@ -13,7 +19,6 @@ int main() {
 	}
 	
 	cin >> t;
-	
 	while (t--) {
 		long long n, k, sum;
 		cin >> n>>k;
@@ -28,20 +33,14 @@ int main() {
 			else{
 				acc.push_back(it);
 				n-=prebase[it];
-			}
 		}
 		while(k>=acc.size()+2 && acc[0]<price.size()-1){
 			int newIt=acc[0]+1;
 			acc[0]=newIt;
 			acc.insert(acc.begin(),newIt);
-			acc.insert(acc.begin(),newIt);
 			sort(acc.begin(),acc.end());
-		}
 		for(int i =0; i<acc.size(); i++){
 			sum+=price[acc[i]];
-		}
 		cout << (acc.size()<=k?sum:-1) << endl;
-	}
-	
 	return 0;
 }

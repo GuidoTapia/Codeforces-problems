@@ -1,7 +1,13 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <map>
+#include <set>
+#include <string>
+#include <cmath>
+#include <climits>
 
 using namespace std;
-
 int main() {
 	int t;
 	cin >> t;
@@ -17,12 +23,10 @@ int main() {
 				ans.push_back(n / div);
 			div =(div-1)*10+1 ;
 		}
-		
 		cout << ans.size() << endl;
 		for (int i = (int)ans.size() - 1; i>=0 ; --i)
 			cout << ans[i] << ' ';
 		cout << endl;
 	}
-	
 	return 0;
 }

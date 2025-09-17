@@ -73,23 +73,63 @@ Each problem is organized by contest number and problem identifier (e.g., `1520/
 
 ## 📝 Problem Index
 
-### Recent Contests
-- **2132**: A, B, C1, C2
-- **1760**: C
-- **1703**: B
-- **1520**: D
+### Recent Solutions (2024)
+- **2132A**: Homework
+- **2132B**: The Secret Number  
+- **2132C1**: The Cunning Seller (easy version)
+- **2132C2**: The Cunning Seller (hard version)
 
-### Classic Problems
-- **977**: A, D
-- **998**: B
-- **992**: A
-- **935**: A
+### 2023 Solutions
+- **1760C**: Advantage
+- **1703B**: ICPC Balloons
+- **1520D**: Same Differences
+- **1208C**: Magic Grid
+- **1208D**: Restore Permutation
+- **1203C**: Common Divisors
+- **1196D2**: RGB Substring (hard version)
+- **1093A**: Dice Rolling
+- **1093C**: Mishka and the Last Exam
+- **1061A**: Coins
+- **1016A**: Death Note
 
-### Early Contests
-- **1**: A, B, C
-- **4**: A, C
-- **6**: B
-- **20**: C
+### 2022 Solutions
+- **998B**: Cutting
+- **992A**: Nastya and an Array
+- **977A**: Wrong Subtraction
+- **977D**: Divide by three, multiply by two
+- **940B**: Our Tanya is Crying Out Loud
+- **935A**: Fafa and his Company
+- **847G**: University Classes
+- **842B**: Gleb And Pizza
+- **755C**: PolandBall and Forest
+- **707B**: Bakery
+- **630A**: Again Twenty Five!
+- **523A**: Rotate, Flip and Zoom
+
+### 2021 Solutions
+- **433B**: Kuriyama Mirai's Stones
+- **368B**: Sereja and Suffixes
+- **356A**: Knight Tournament
+- **282A**: Bit++
+- **263A**: Beautiful Matrix
+- **231A**: Team
+- **213B**: Numbers
+- **189A**: Cut Ribbon
+- **158A**: Next Round
+- **112A**: Petya and Strings
+- **71A**: Way Too Long Words
+- **50A**: Domino piling
+- **35D**: Animals
+- **20C**: Dijkstra?
+- **6B**: President's Office
+- **4A**: Watermelon
+- **4C**: Registration System
+- **1A**: Theatre Square
+- **1B**: Spreadsheet
+- **1C**: Ancient Berland Circus
+
+### 2020 Solutions
+- **705A**: Hulk
 
 ## 📈 Progress Tracking
 

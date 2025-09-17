@@ -1,11 +1,14 @@
-#include <bits/stdc++.h>
-#include <cmath>
 #include <iostream>
-#include <stdlib.h>
 #include <vector>
+#include <algorithm>
+#include <map>
+#include <set>
+#include <string>
+#include <cmath>
+#include <climits>
+#include <stdlib.h>
 
 using namespace std;
-
 int main() {
     long long n;
     map<string, int> mp;

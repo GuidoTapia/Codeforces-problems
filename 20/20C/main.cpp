@@ -1,4 +1,7 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <climits>
 
 using namespace std;
 #define pii pair<int ,int>
@@ -24,7 +27,7 @@ int main()
     cin>>nodes>>edges;
     modi.resize(nodes+1);
     dist.resize(nodes+1);
-    for(int i=0;i<=nodes;i++){dist[i]=INFINITY;modi[i]=-1;}
+    for(int i=0;i<=nodes;i++){dist[i]=INT_MAX;modi[i]=-1;}
 
     dist[1]=0;
 

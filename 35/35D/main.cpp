@@ -2,13 +2,15 @@
 #include <math.h>
 #include <algorithm>    // std::sort
 #include <vector>
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <map>
+#include <set>
+#include <string>
+#include <cmath>
+#include <climits>
 using namespace std;
 
 	
-using namespace std;
-
-
 int main(){
   freopen("input.txt","r",stdin);
 	freopen("output.txt","w",stdout);
@@ -24,7 +26,6 @@ int main(){
   while(m>=animales[i] && i<n){
     m-=animales[i];
     ++i;
-  }
   cout<<i;
   return 0;
 }

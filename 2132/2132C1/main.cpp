@@ -1,7 +1,13 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <map>
+#include <set>
+#include <string>
+#include <cmath>
+#include <climits>
 
 using namespace std;
-
 int main() {
 	long long t, acc;
 	vector<long long> prebase,price;
@@ -13,7 +19,6 @@ int main() {
 	}
 	
 	cin >> t;
-	
 	while (t--) {
 		long long n;
 		cin >> n;
@@ -26,11 +31,8 @@ int main() {
 			else{
 				sum+=price[it];
 				n-=prebase[it];
-			}
 		}
 		
 		cout << sum << endl;
-	}
-	
 	return 0;
 }

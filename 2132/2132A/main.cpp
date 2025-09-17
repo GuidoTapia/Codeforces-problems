@@ -1,7 +1,13 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <map>
+#include <set>
+#include <string>
+#include <cmath>
+#include <climits>
 
 using namespace std;
-
 int main() {
 	int t;
 	cin >> t;
@@ -18,9 +24,7 @@ int main() {
 				a.push_back(b[i]);
 			}
 		}
-		
 		cout << a << endl;
 	}
-	
 	return 0;
 }
