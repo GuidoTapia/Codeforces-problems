@@ -17,6 +17,7 @@ int main() {
     cin>>mat[i];
   }
   set<char> grupo;
+  for(int i=0;i<n;++i){
     for(int j=0;j<m;++j){
       if(mat[i][j]==c){
         if(i<n-1)
@@ -29,6 +30,7 @@ int main() {
         grupo.insert(mat[i][j-1]);
       }
     }
+  }
   grupo.erase(c);
   grupo.erase('.');
   cout<<grupo.size();

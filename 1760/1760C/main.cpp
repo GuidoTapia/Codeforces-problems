@@ -32,11 +32,15 @@ int main() {
             }else if (arr[j]>arr[second]){
                 second=j;
             }
+        }
         for (int j=0; j<n; j++){
             if (j==first){
                 cout<<arr[j]-arr[second]<<" ";
             }else{
                 cout<<arr[j]-arr[first]<<" ";
+            }
+        }
         cout<<endl;
     }
+    return 0;
 }

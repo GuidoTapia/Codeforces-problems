@@ -20,9 +20,11 @@ int main() {
   for(int i=n-1;i>-1;--i){
     conj.insert(arr[i]);
     dp[i]=conj.size();
+  }
   for(int i=0;i<m;++i){
     int j;
     cin>>j;
     cout<<dp[j-1]<<endl;
+  }
   return 0;
 }

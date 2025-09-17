@@ -26,6 +26,7 @@ int main(){
   while(m>=animales[i] && i<n){
     m-=animales[i];
     ++i;
+  }
   cout<<i;
   return 0;
 }

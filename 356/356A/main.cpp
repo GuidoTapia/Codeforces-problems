@@ -26,5 +26,8 @@ int main(){
     deadpool.insert(x);
     cab[x]=0;
 	}
-		  cout<<cab[i]<<" ";
+  for(int i=1;i<=n;++i){
+    cout<<cab[i]<<" ";
+  }
+  return 0;
 }

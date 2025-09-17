@@ -21,6 +21,7 @@ long long query(int x){
      for(; x > 0; x -= x&-x)
         sum += BIT[x];
      return sum;
+}
 int searchNumber(long long prefSum){
     int num = 0;
     long long sum = 0;
@@ -31,6 +32,7 @@ int searchNumber(long long prefSum){
         }
     }
     return num + 1;
+}
 int main(){
 	scanf("%d",&n);
 	for(int i = 1; i <= n; ++i){
@@ -45,4 +47,9 @@ int main(){
         printf("%d", ans[i]);
         if(i < n){
             printf(" ");
-        else printf("\n");
+        } else {
+            printf("\n");
+        }
+    }
+    return 0;
+}

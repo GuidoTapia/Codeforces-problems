@@ -1,14 +1,13 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <map>
-#include <set>
 #include <string>
 #include <cmath>
 #include <climits>
-#include <stdlib.h>
+#include <map>
 
 using namespace std;
+
 int getMinItemsToChange (vector<long> v, long k){
     int inicio=0;
     int cont=0;
@@ -27,15 +26,28 @@ int getMinItemsToChange (vector<long> v, long k){
             }
             if(malas_real<minMalas){
                 minMalas=malas_real;
+            }
             
             cont-=abs(v[inicio]);
             if(v[inicio]<0){
                 malas+=v[inicio];
+            }
             inicio++;
+        }
         if(cont>=k){
+            int malas_real= malas;
+            if(v[inicio]<0 || v[i]<0){
+                long malasElim=max(-v[inicio],0l)+max(-v[i],0l);
+                malas_real-= min(cont-k,malasElim);
+            }
+            if(malas_real<minMalas){
+                minMalas=malas_real;
+            }
+        }
     }
     return minMalas;
 }
+
 int main() {
     map <char,int> RGB= {{'R',0},{'G',1},{'B',2}};
     long n,k,q;
@@ -66,16 +78,41 @@ int main() {
                         startsB.push_back(-1);
                     }
                 }
+            }
             else if(value==(j+1)%3){
                 if(startsG.back()>0){
                     startsR.back()--;
                     startsG.back()++;
+                    startsB.back()--;
+                }else{
                     startsG.push_back(1);
                     if(startsR.back()>0){
                         startsR.push_back(-1);
+                        startsB.back()--;
+                    }else{
                         startsR.back()--;
+                        startsB.push_back(-1);
+                    }
+                }
             }else{
                 if(startsB.back()>0){
+                    startsR.back()--;
+                    startsG.back()--;
                     startsB.back()++;
+                }else{
                     startsB.push_back(1);
+                    if(startsR.back()>0){
+                        startsR.push_back(-1);
+                        startsG.back()--;
+                    }else{
+                        startsR.back()--;
+                        startsG.push_back(-1);
+                    }
+                }
+            }
+        }
+
     cout<< min(min(getMinItemsToChange(startsR,k),getMinItemsToChange(startsG,k)),getMinItemsToChange(startsB,k))<<endl;
+
+    }
+}

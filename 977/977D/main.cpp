@@ -18,6 +18,8 @@ struct tripleta{
 struct op{
     bool operator()(tripleta a, tripleta b){
         return a.y<b.y || a.z>b.z;
+    }
+};
 int main(){
     long long n,cont,aux;
     cin>>n;
@@ -29,11 +31,16 @@ int main(){
             ++cont;
         }
         arr[i].y=cont;
+        cont=0;
         for(aux=arr[i].x; !(aux%3l) ;aux/=3){
+            ++cont;
+        }
         arr[i].z=cont;
+    }
     op o;
     sort(arr.begin(),arr.end(), o);
     for(int i=0;i<arr.size();++i){
         cout<<arr[i].x<<' ';
+    }
 	return 0;
 }

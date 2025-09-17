@@ -29,6 +29,8 @@ int main() {
                 count+=2;
                 arr[str[j] - 'A']=1;   
             }
+        }
         cout<< count<< endl;
     }
+    return 0;
 }

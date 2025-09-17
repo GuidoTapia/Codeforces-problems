@@ -23,8 +23,10 @@ int main() {
   sort(arr2.begin(),arr2.end());
   suma[0]=0;
   suma2[0]=0;
+  for(ll i=0;i<n;++i){
     suma[i+1]=suma[i]+arr[i];
     suma2[i+1]=suma2[i]+arr2[i];
+  }
   cin>>m;
   ll a,l,r;
   for(ll i=0;i<m;++i){
@@ -34,4 +36,6 @@ int main() {
     }else{
       cout<<suma2[r]-suma2[l-1]<<endl;
     }
+  }
+  return 0;
 }
